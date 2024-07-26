@@ -5,14 +5,14 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 
-import { TopNav } from "./_components/topNav";
+import { TopNav } from "./_components/topnav";
 
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
-import { ourFileRouter } from "./api/uploadthing/code";
+import { ourFileRouter } from "./api/uploadthing/core";
 import { extractRouterConfig } from "uploadthing/server";
 
 export const metadata: Metadata = {
-  title: "Galery App",
+  title: "Gallery App",
   description: "maybe a galery app",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
